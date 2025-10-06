@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Fashionista</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-banner {
+            background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+            color: #2d2d2d;
+            min-height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact-form-section {
+            background: linear-gradient(120deg, #f5e6fa 0%, #e0eafc 100%);
+            padding: 3rem 0;
+        }
+        .contact-info {
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 24px rgba(127, 83, 172, 0.10);
+        }
+        .contact-info h2, .contact-info h5 {
+            color: #7f53ac;
+        }
+        .btn-gradient {
+            background: linear-gradient(90deg, #7f53ac 0%, #8ec5fc 100%);
+            color: #fff;
+            border: none;
+            transition: background 0.2s;
+        }
+        .btn-gradient:hover {
+            background: linear-gradient(90deg, #5e3780 0%, #5fa8d3 100%);
+            color: #fff;
+        }
+        .form-control:focus {
+            border-color: #7f53ac;
+            box-shadow: 0 0 0 0.2rem rgba(127, 83, 172, 0.15);
+        }
+        .social-icon {
+            background: #f5e6fa;
+            border-radius: 50%;
+            padding: 0.5rem;
+            margin-right: 0.5rem;
+            transition: background 0.2s;
+            display: inline-block;
+        }
+        .social-icon:hover {
+            background: #7f53ac;
+        }
+        .social-icon img {
+            filter: grayscale(1) brightness(0.5);
+            width: 28px;
+            height: 28px;
+        }
+        .social-icon:hover img {
+            filter: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Fashionista</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Banner -->
+    <section class="contact-banner text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Contact Us</h1>
+            <p class="lead">We'd love to hear from you! Reach out for support, feedback, or collaboration.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-6">
+                    <div class="p-4 bg-white rounded shadow">
+                        <h2 class="fw-bold mb-4" style="color:#7f53ac;">Send Us a Message</h2>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-gradient w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-info p-4">
+                        <h2 class="fw-bold mb-4">Get in Touch</h2>
+                        <p class="mb-2"><strong>Email:</strong> support@fashionista.com</p>
+                        <p class="mb-2"><strong>Phone:</strong> +91 98765 43210</p>
+                        <p class="mb-2"><strong>Address:</strong> 123 Fashion Street, Mumbai, India</p>
+                        <hr>
+                        <h5 class="fw-bold">Follow Us</h5>
+                        <a href="#" class="social-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram"></a>
+                        <a href="#" class="social-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook"></a>
+                        <a href="#" class="social-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <small>&copy; 2024 Fashionista. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
