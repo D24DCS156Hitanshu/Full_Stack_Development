@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Upload Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .upload-form {
+            border: 2px dashed #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+        #message {
+            margin-top: 20px;
+            padding: 10px;
+            display: none;
+        }
+        .error { background-color: #ffebee; }
+        .success { background-color: #e8f5e9; }
+    </style>
+</head>
+<body>
+    <h1>Job Portal - Resume Upload</h1>
+    <div class="upload-form">
+        <h3>Upload your Resume</h3>
+        <p>Only PDF files up to 2MB are allowed</p>
+        <form id="uploadForm">
+            <input type="file" id="resume" name="resume" accept="application/pdf" required>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+    <div id="message"></div>
+
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData();
+            const fileField = document.getElementById('resume');
+            formData.append('resume', fileField.files[0]);
+
+            try {
+                const response = await fetch('/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+                const result = await response.json();
+                const messageDiv = document.getElementById('message');
+                messageDiv.style.display = 'block';
+                
+                if (response.ok) {
+                    messageDiv.className = 'success';
+                    messageDiv.textContent = result.message;
+                } else {
+                    messageDiv.className = 'error';
+                    messageDiv.textContent = result.error;
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        });
+    </script>
+</body>
+</html>

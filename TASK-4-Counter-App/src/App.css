@@ -1,0 +1,12 @@
+.try {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.box{
+  justify-content: center;
+  align-items: center;
+  width: 50rem;
+  border: 2px solid #000000;
+}

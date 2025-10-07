@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Voting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 id="electionTitle" class="title">E-Voting System</h1>
+                <p class="subtitle">Your voice matters. Vote securely and confidentially.</p>
+                <a href="admin.html" class="btn btn-admin">Admin Panel</a>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="voting-card">
+                <div class="card-header">
+                    <h2>Cast Your Vote</h2>
+                    <div id="voterStatus" class="voter-status"></div>
+                </div>
+                
+                <div id="candidatesContainer" class="candidates-container">
+                    <!-- Candidates will be loaded here -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Vote Confirmation Modal -->
+    <div class="modal" id="voteModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Confirm Your Vote</h3>
+                <button class="modal-close" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="modalText"></p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cancelVote">Cancel</button>
+                <button class="btn btn-primary" id="confirmVote">Confirm Vote</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Voter Login Modal -->
+    <div class="modal" id="voterLoginModal" style="display: none;">
+        <div class="modal-content" style="min-width:320px;max-width:95vw;padding:2.2rem 2rem 1.5rem 2rem;box-shadow:0 4px 24px rgba(34,34,59,0.10);border-radius:1.2rem;">
+            <div class="modal-header" style="margin-bottom:1.2rem;">
+                <h3 style="font-size:1.35rem;font-weight:600;letter-spacing:0.2px;">Voter Login</h3>
+            </div>
+            <div class="modal-body">
+                <div class="form-group" style="margin-bottom:1.2rem;">
+                    <input type="text" id="voterNameInput" placeholder="Enter your full name" class="form-input" style="width:100%;padding:0.8rem 1rem;border-radius:0.8rem;border:1.5px solid #e5e7eb;font-size:1rem;">
+                </div>
+                <div id="voterLoginMsg" class="error-message" style="display: none;color:#ef4444;font-size:1rem;margin-bottom:0.5rem;">Please enter your name</div>
+                <div id="alreadyVotedMsg" class="warning-message" style="display: none;color:#f59e0b;font-size:1rem;margin-bottom:0.5rem;">You have already voted!</div>
+            </div>
+            <div class="modal-footer" style="margin-top:1.2rem;text-align:center;">
+                <button class="btn btn-primary add-btn" id="voterLoginBtn" style="width:100%;">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logout Modal -->
+    <div class="modal" id="logoutModal" style="display:none;">
+        <div class="modal-content" style="min-width:320px;max-width:95vw;padding:2.2rem 2rem 1.5rem 2rem;box-shadow:0 4px 24px rgba(34,34,59,0.10);border-radius:1.2rem;text-align:center;">
+            <div class="modal-header" style="margin-bottom:1.2rem;">
+                <h3 style="font-size:1.25rem;font-weight:600;letter-spacing:0.2px;">Logging Out</h3>
+            </div>
+            <div class="modal-body">
+                <p style="font-size:1.1rem;color:#6b7280;">Thank you for voting.<br>You are being logged out for security reasons.</p>
+                <div id="logoutCountdown" style="margin-top:1.2rem;font-size:1.1rem;color:#3b82f6;font-weight:600;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

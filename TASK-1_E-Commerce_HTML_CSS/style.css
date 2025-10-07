@@ -1,0 +1,326 @@
+/* Custom Styles for Fashion E-Commerce Website */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    letter-spacing: 2px;
+    font-size: 1.7rem;
+    color: #2d2d2d !important;
+}
+
+.hero-section {
+    background: linear-gradient(120deg, #f5e6fa 0%, #e0eafc 100%);
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section h1 {
+    color: #3a2e5c;
+}
+
+.hero-section .btn-primary {
+    background: #7f53ac;
+    border: none;
+    transition: background 0.2s;
+}
+
+.hero-section .btn-primary:hover {
+    background: #5e3780;
+}
+
+.card {
+    border: none;
+    border-radius: 1rem;
+    transition: box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 24px rgba(127, 83, 172, 0.15);
+    transform: translateY(-4px);
+}
+
+.card-img-top {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    height: 320px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #7f53ac;
+    font-weight: 600;
+}
+
+.btn-outline-primary {
+    border-color: #7f53ac;
+    color: #7f53ac;
+}
+
+.btn-outline-primary:hover {
+    background: #7f53ac;
+    color: #fff;
+}
+
+#about img {
+    max-height: 350px;
+    object-fit: cover;
+}
+
+footer {
+    background: #2d2d2d !important;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+/* Infinite Moving Cards */
+.infinite-cards-section {
+    background: linear-gradient(90deg, #f5e6fa 0%, #e0eafc 100%);
+    overflow: hidden;
+}
+.infinite-cards-wrapper {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    padding: 1rem 0;
+}
+.infinite-cards-track {
+    display: flex;
+    width: calc(340px * 6); /* 6 cards */
+    animation: infinite-scroll 18s linear infinite;
+}
+.infinite-card {
+    flex: 0 0 320px;
+    margin: 0 10px;
+    background: #fff;
+    border-radius: 1.2rem;
+    box-shadow: 0 4px 24px rgba(127, 83, 172, 0.10);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.infinite-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+}
+.infinite-card .card-info {
+    padding: 1rem;
+    text-align: center;
+}
+.infinite-card h5 {
+    color: #7f53ac;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+.infinite-card span {
+    color: #5e3780;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+.infinite-card:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 8px 32px rgba(127, 83, 172, 0.18);
+}
+@keyframes infinite-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-1020px); }
+}
+
+@media (max-width: 991px) {
+    .infinite-card {
+        flex: 0 0 260px;
+    }
+    .infinite-cards-track {
+        width: calc(270px * 6);
+    }
+    @keyframes infinite-scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-810px); }
+    }
+}
+@media (max-width: 600px) {
+    .infinite-card {
+        flex: 0 0 180px;
+    }
+    .infinite-cards-track {
+        width: calc(190px * 6);
+    }
+    .infinite-card img {
+        height: 110px;
+    }
+    @keyframes infinite-scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-570px); }
+    }
+}
+
+/* Exclusive Services Section */
+.exclusive-services-section {
+    background: linear-gradient(90deg, #e0eafc 0%, #f5e6fa 100%);
+}
+.service-card {
+    background: #fff;
+    border-radius: 1.2rem;
+    box-shadow: 0 4px 24px rgba(127, 83, 172, 0.10);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.service-card:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 8px 32px rgba(127, 83, 172, 0.18);
+    z-index: 2;
+}
+.service-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1rem auto;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    color: #fff;
+    box-shadow: 0 2px 12px rgba(127, 83, 172, 0.10);
+    transition: background 0.2s;
+}
+.gradient-bg {
+    background: linear-gradient(135deg, #7f53ac 0%, #8ec5fc 100%);
+}
+.service-card:hover .gradient-bg {
+    background: linear-gradient(135deg, #5e3780 0%, #5fa8d3 100%);
+}
+.service-card h5 {
+    color: #7f53ac;
+    font-weight: 600;
+}
+.service-card p {
+    color: #5e3780;
+    opacity: 0.85;
+}
+@media (max-width: 991px) {
+    .service-card {
+        padding: 1.5rem 0.5rem;
+    }
+}
+@media (max-width: 767px) {
+    .hero-section {
+        min-height: 220px;
+        padding: 2rem 0;
+    }
+    .card-img-top {
+        height: 200px;
+    }
+    #about img {
+        max-height: 200px;
+    }
+}
+
+/* From Uiverse.io by gharsh11032000 */
+.button {
+position: relative;
+width: 120px;
+height: 40px;
+background-color: #000;
+display: flex;
+align-items: center;
+color: white;
+flex-direction: column;
+justify-content: center;
+border: none;
+padding: 12px;
+gap: 12px;
+border-radius: 8px;
+cursor: pointer;
+}
+.button::before {
+content: 'SHOP NOW';
+position: absolute;
+inset: 0;
+left: -4px;
+top: -1px;
+margin: auto;
+width: 128px;
+height: 48px;
+border-radius: 10px;
+background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+z-index: -10;
+pointer-events: none;
+transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.button::after {
+content: "SHOP NOW";
+z-index: -1;
+position: absolute;
+inset: 0;
+background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+transform: translate3d(0, 0, 0) scale(0.95);
+filter: blur(20px);
+}
+.button:hover::after {
+filter: blur(30px);
+}
+.button:hover::before {
+transform: rotate(-180deg);
+}
+.button:active::before {
+scale: 0.7;
+}
+
+/* Center the hero button */
+.hero-btn-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+/* Sales & Offers Section */
+.sales-section {
+    background: linear-gradient(90deg, #f5e6fa 0%, #e0eafc 100%);
+}
+.sale-card {
+    background: #fff;
+    border-radius: 1.2rem;
+    box-shadow: 0 4px 24px rgba(127, 83, 172, 0.10);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #e81cff1a;
+}
+.sale-card:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 8px 32px rgba(127, 83, 172, 0.18);
+    border-color: #e81cff;
+    z-index: 2;
+}
+.sale-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1rem auto;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    color: #fff;
+    background: linear-gradient(135deg, #e81cff 0%, #40c9ff 100%);
+    box-shadow: 0 2px 12px rgba(127, 83, 172, 0.10);
+}
+.sale-highlight {
+    color: #e81cff;
+    font-weight: bold;
+    font-size: 1.1em;
+}
