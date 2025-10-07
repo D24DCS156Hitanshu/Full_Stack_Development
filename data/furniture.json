@@ -1,0 +1,281 @@
+[
+  {
+    "id": "de980b8c-92da-403b-8342-b879a04eed9b",
+    "name": "Test Oak Table",
+    "category": "table",
+    "material": "oak",
+    "dimensions": {
+      "width": 72,
+      "height": 30,
+      "depth": 36
+    },
+    "finish": "natural",
+    "color": "natural",
+    "price": 45000,
+    "stock": 5,
+    "status": "Active",
+    "images": [
+      "/placeholder.svg"
+    ],
+    "description": "A beautiful oak table for testing",
+    "model3d": {
+      "glb": "/uploads/models/test.glb"
+    },
+    "created_at": "2025-10-07T04:10:17.074Z",
+    "updated_at": "2025-10-07T04:10:17.074Z"
+  },
+  {
+    "id": "36fed868-4da7-4287-8bd0-efed0e8c0cb3",
+    "name": "Classic Oak Dining Table",
+    "category": "table",
+    "material": "oak",
+    "dimensions": {
+      "width": 72,
+      "height": 30,
+      "depth": 36
+    },
+    "finish": "natural",
+    "color": "natural",
+    "price": 45000,
+    "stock": 8,
+    "status": "Active",
+    "images": [
+      "/placeholder.svg?height=300&width=400&text=Oak+Table"
+    ],
+    "description": "A beautiful handcrafted oak dining table perfect for family gatherings. Features solid oak construction with natural finish.",
+    "model3d": {
+      "glb": "https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb"
+    },
+    "created_at": "2025-10-07T04:12:03.156Z",
+    "updated_at": "2025-10-07T04:12:03.156Z"
+  },
+  {
+    "id": "7953dc7d-acf5-47b5-953c-e6d457f49def",
+    "name": "Modern Walnut Chair",
+    "category": "chair",
+    "material": "walnut",
+    "dimensions": {
+      "width": 24,
+      "height": 36,
+      "depth": 24
+    },
+    "finish": "stained",
+    "color": "brown",
+    "price": 18000,
+    "stock": 15,
+    "status": "Active",
+    "images": [
+      "/placeholder.svg?height=300&width=400&text=Walnut+Chair"
+    ],
+    "description": "Ergonomic walnut chair with rich brown stain. Comfortable seating with elegant design.",
+    "model3d": {
+      "glb": "https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb"
+    },
+    "created_at": "2025-10-07T04:12:03.156Z",
+    "updated_at": "2025-10-07T04:12:03.156Z"
+  },
+  {
+    "id": "0536739a-7571-4c45-97db-c25335656383",
+    "name": "Luxury Teak Sofa",
+    "category": "sofa",
+    "material": "teak",
+    "dimensions": {
+      "width": 84,
+      "height": 36,
+      "depth": 36
+    },
+    "finish": "lacquered",
+    "color": "natural",
+    "price": 125000,
+    "stock": 5,
+    "status": "Active",
+    "images": [
+      "/placeholder.svg?height=300&width=400&text=Teak+Sofa"
+    ],
+    "description": "Premium teak wood sofa with lacquered finish. Three-seater design with plush cushions.",
+    "model3d": {
+      "glb": "https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb"
+    },
+    "created_at": "2025-10-07T04:12:03.156Z",
+    "updated_at": "2025-10-07T04:12:03.156Z"
+  },
+  {
+    "id": "3f24aa8f-e41b-44bd-b17c-95b10860adbd",
+    "name": "Pine Wood Bookshelf",
+    "category": "bookshelf",
+    "material": "pine",
+    "dimensions": {
+      "width": 48,
+      "height": 72,
+      "depth": 12
+    },
+    "finish": "painted",
+    "color": "white",
+    "price": 28000,
+    "stock": 12,
+    "status": "Active",
+    "images": [
+      "/placeholder.svg?height=300&width=400&text=Pine+Bookshelf"
+    ],
+    "description": "Spacious pine bookshelf with white painted finish. Five shelves for books and decorations.",
+    "model3d": {
+      "glb": "https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb"
+    },
+    "created_at": "2025-10-07T04:12:03.156Z",
+    "updated_at": "2025-10-07T04:12:03.156Z"
+  },
+  {
+    "id": "5c57cf8a-eb6c-40eb-87fd-9f4d931b3341",
+    "name": "Mahogany King Bed",
+    "category": "bed",
+    "material": "mahogany",
+    "dimensions": {
+      "width": 76,
+      "height": 48,
+      "depth": 80
+    },
+    "finish": "stained",
+    "color": "cherry",
+    "price": 95000,
+    "stock": 6,
+    "status": "Active",
+    "images": [
+      "/placeholder.svg?height=300&width=400&text=Mahogany+Bed"
+    ],
+    "description": "Elegant mahogany king-size bed with cherry stain. Includes headboard and footboard.",
+    "model3d": {
+      "glb": "https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb"
+    },
+    "created_at": "2025-10-07T04:12:03.156Z",
+    "updated_at": "2025-10-07T04:12:03.156Z"
+  },
+  {
+    "id": "64145db0-7abf-484b-a998-4675120fe63e",
+    "name": "Maple Wood Dresser",
+    "category": "dresser",
+    "material": "maple",
+    "dimensions": {
+      "width": 60,
+      "height": 36,
+      "depth": 20
+    },
+    "finish": "natural",
+    "color": "natural",
+    "price": 52000,
+    "stock": 7,
+    "status": "Active",
+    "images": [
+      "/placeholder.svg?height=300&width=400&text=Maple+Dresser"
+    ],
+    "description": "Six-drawer maple dresser with natural finish. Smooth gliding drawers with quality hardware.",
+    "model3d": {
+      "glb": "https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb"
+    },
+    "created_at": "2025-10-07T04:12:03.156Z",
+    "updated_at": "2025-10-07T04:12:03.156Z"
+  },
+  {
+    "id": "46082741-328d-40c9-97a8-50cfa749008a",
+    "name": "SOFA",
+    "category": "chair",
+    "material": "teak",
+    "dimensions": {
+      "width": 72,
+      "height": 36,
+      "depth": 30
+    },
+    "finish": "natural",
+    "color": "brown",
+    "price": 55000,
+    "stock": 4,
+    "status": "Active",
+    "images": [
+      "/uploads/images/3b22df43-c41d-480e-a029-f40e6b5c92c4.webp"
+    ],
+    "description": "fgh",
+    "model3d": {
+      "glb": "/uploads/models/70f19666-2b4f-4107-99da-507b43c94145.glb",
+      "usdz": "/uploads/models/7e7e4f21-dd63-4ce7-acd5-4540682d7225.usdz"
+    },
+    "created_at": "2025-10-07T04:22:33.403Z",
+    "updated_at": "2025-10-07T04:22:33.403Z"
+  },
+  {
+    "id": "acf413a1-2369-4971-941a-1ec1179e501b",
+    "name": "Long Sofa",
+    "category": "sofa",
+    "material": "pine",
+    "dimensions": {
+      "width": 72,
+      "height": 36,
+      "depth": 30
+    },
+    "finish": "stained",
+    "color": "brown",
+    "price": 60000,
+    "stock": 10,
+    "status": "Active",
+    "images": [
+      "/uploads/images/c7615774-c3a7-42d2-beec-cc25b011ffa5.png"
+    ],
+    "description": "",
+    "model3d": {
+      "glb": "/uploads/models/512fb762-11b0-4356-a23c-892776723769.glb",
+      "usdz": "/uploads/models/454a8bb6-8d8a-455e-8087-fb78ec3c56f3.usdz"
+    },
+    "created_at": "2025-10-07T04:36:14.452Z",
+    "updated_at": "2025-10-07T04:36:14.452Z"
+  },
+  {
+    "id": "81434bbc-0e25-4c06-ad3e-a8681c7cfa57",
+    "name": "Study Table",
+    "category": "table",
+    "material": "pine",
+    "dimensions": {
+      "width": 72,
+      "height": 36,
+      "depth": 30
+    },
+    "finish": "stained",
+    "color": "brown",
+    "price": 45000,
+    "stock": 10,
+    "status": "Active",
+    "images": [
+      "/uploads/images/bd2dcba5-80cf-4d4f-8668-366c1cf86e2d.png"
+    ],
+    "description": "",
+    "model3d": {
+      "glb": "/uploads/models/e3fb91a5-67c6-4b88-8c95-7b4bef3aa7c3.glb",
+      "usdz": "/uploads/models/df927c2d-0c72-4af4-be50-14120d2ec9d9.usdz"
+    },
+    "created_at": "2025-10-07T04:39:06.878Z",
+    "updated_at": "2025-10-07T04:39:06.878Z"
+  },
+  {
+    "id": "713c1c1d-a5f3-41cb-b08f-afc7ddac40af",
+    "name": "Dining Chair",
+    "category": "chair",
+    "material": "teak",
+    "dimensions": {
+      "width": 72,
+      "height": 36,
+      "depth": 30
+    },
+    "finish": "painted",
+    "color": "black",
+    "price": 10000,
+    "stock": 5,
+    "status": "Active",
+    "images": [
+      "/uploads/images/c74e4bf6-f152-44b6-9af8-abb614c1d68b.png"
+    ],
+    "description": "",
+    "model3d": {
+      "glb": "/uploads/models/21d90cf2-56b0-4b65-8556-b77747820d88.glb",
+      "usdz": "/uploads/models/14c47545-2edc-4b43-8fea-bab416143a76.usdz"
+    },
+    "created_at": "2025-10-07T04:40:42.133Z",
+    "updated_at": "2025-10-07T04:40:42.133Z"
+  }
+]
